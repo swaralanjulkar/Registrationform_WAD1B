@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="qualification">Educational Qualification:</label>
+    <input type="text" id="qualification" name="qualification" required>
+
+    <label for="hobbies">Hobbies:</label>
+    <input type="text" id="hobbies" name="hobbies" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+
+    <button type="button" onclick="submitRegistration()">Register</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
